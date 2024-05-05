@@ -1,13 +1,12 @@
 
 import React, {useEffect,useState} from 'react';
-import Articles from  './componets/article/article'
+import ListArticles from  './componets/article/listArticles'; 
 import logo from './logo.svg';  
 import './App.css';
 
 
 function App() {
   const [islogin , setIslogin] =  useState(false)
-  const [article , setArticle] =  useState([])
 
   useEffect(() => {
       

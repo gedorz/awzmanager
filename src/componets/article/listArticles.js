@@ -1,6 +1,6 @@
-import useArticlesGet from './hooks/useArticlesGet';
+import useArticlesGet from '../../hooks/useArticlesGet';
 
-const Articles = () => {
+const ListArticles = () => {
   const {articles}= useArticlesGet();
 
   return (
@@ -19,4 +19,4 @@ const Articles = () => {
 };
 
 
-export default Articles 
+export default ListArticles ;
