@@ -1,19 +1,7 @@
-import React, { useState, useEffect } from "react";
-import axios from "axios";
+import useArticlesGet from './hooks/useArticlesGet';
 
 const Articles = () => {
-  const [articles, setArticles] = useState([]);
-
-  useEffect(() => {
-    axios
-      .get("https://jsonplaceholder.typicode.com/todos")
-      .then((response) => {
-        setArticles(response.data);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  }, []);
+  const {articles}= useArticlesGet();
 
   return (
     <div>
